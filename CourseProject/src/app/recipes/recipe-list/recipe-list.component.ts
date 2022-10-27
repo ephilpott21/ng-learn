@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Recipe } from '../recipe.model';
+import { Recipe } from '../../shared/recipe.model';
 
 @Component({
   selector: 'app-recipe-list',
@@ -10,10 +10,10 @@ export class RecipeListComponent implements OnInit {
   recipes: Recipe[] = [
     new Recipe('Biscuits & Gravy',
         'Biscuits with Sausage Gravy',
-        '../../../../images/BiscuitsNGravy.jpg'),
+        'https://tinyurl.com/3wvhr8s4'),
     new Recipe('Cold Cereal',
         'Cereal with Added Milk',
-        '../../../../images/breakfast-pouring-milk-into-corn-cereal.jpg')
+        'https://tinyurl.com/25secunv')
   ];
 
   constructor() { }
